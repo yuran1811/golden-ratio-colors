@@ -1,0 +1,70 @@
+@import url(./styles/fonts.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "JetBrainsMono", sans-serif;
+
+    &::-webkit-scrollbar-corner {
+    }
+    &::-webkit-scrollbar {
+      @apply h-2 w-2;
+      &-track-piece,
+      &-corner,
+      &-track {
+        @apply bg-slate-900;
+      }
+      &-thumb {
+        @apply bg-slate-400;
+      }
+    }
+  }
+
+  html,
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .color-card {
+    background-color: var(--hex-color);
+
+    @apply h-[96px] min-w-[96px] origin-top cursor-pointer p-2 transition-transform;
+
+    & > .panel {
+      @apply absolute inset-0 hidden;
+    }
+
+    &.active {
+      @apply scale-[3] border-2;
+
+      & > .panel {
+        @apply flexcentercol;
+      }
+    }
+  }
+}
+
+@layer utilities {
+  .flexcenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexcentercol {
+    @apply flexcenter flex-col;
+  }
+
+  .rounded-leaf {
+    &-left {
+      @apply rounded-br-3xl rounded-tl-3xl;
+    }
+
+    &-right {
+      @apply rounded-bl-3xl rounded-tr-3xl;
+    }
+  }
+}
