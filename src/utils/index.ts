@@ -1,4 +1,4 @@
-import { RGBColor } from "@shared/types";
+import type { RGBColor } from "@shared/types";
 
 export const classnames = (...arg: (string | boolean)[]) =>
   arg

@@ -1,7 +1,7 @@
 import { $, component$, useSignal } from "@builder.io/qwik";
 
 import { GOLDEN_RATIO_COLORS } from "@shared/constants";
-import { RGBColor } from "@shared/types";
+import type { RGBColor } from "@shared/types";
 import { classnames, copyToClipboard, exportColor } from "@utils/index";
 
 export interface ColorCardProps {
