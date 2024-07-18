@@ -36,7 +36,7 @@
     @apply h-[96px] min-w-[96px] origin-top cursor-pointer p-2 transition-transform;
 
     & > .panel {
-      @apply absolute inset-0 hidden;
+      @apply absolute inset-0 hidden p-2;
     }
 
     &.active {

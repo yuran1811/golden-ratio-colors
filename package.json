@@ -12,7 +12,7 @@
     "sharp"
   ],
   "scripts": {
-    "build": "yarn add sharp --ignore-engines && qwik build",
+    "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
     "build.types": "tsc --incremental --noEmit",
@@ -25,9 +25,6 @@
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
-  },
-  "dependencies": {
-    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.7.0",
