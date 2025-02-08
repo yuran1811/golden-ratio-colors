@@ -1,4 +1,4 @@
-<h1 align="center">Golden Ratio Colors</h1>
+<h1 align="center">Golden Ratio Colors Picker</h1>
 <p align="center" style="font-size:16px"><strong>Click-to-copy colors generated from golden ratio calculation</strong></p>
 <p align="center">  
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="400" />
@@ -20,10 +20,7 @@
 
 ## Screenshots
 
-<div style="display:flex;gap:12px;justify-content:center">
-    <img src="" style="width:45%;max-width:380px">
-    <img src="" style="width:45%;max-width:380px">
-</div>
+![](./public/screenshots/home.png)
 
 ## Quick Start
 
